@@ -5,10 +5,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,700);
 @import url(http://fonts.googleapis.com/css?family=Raleway:700,400,300);
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .brand {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 html,
 body {
@@ -113,7 +113,7 @@ blockquote {
 ----------------------------------------------------------------------------- */
 .header {
   color: #ffffff;
-  background-color: rgba(0, 0, 0, );
+  background-color: rgba(0, 0, 0);
   padding: 10px 0;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -140,7 +140,7 @@ blockquote {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.53);
-  content: "";
+  content: '';
 }
 .banner-caption {
   position: absolute;
@@ -180,7 +180,7 @@ blockquote {
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color:white;
+  color: white;
   background-color: aqua;
   border: 0px;
 }
@@ -230,7 +230,7 @@ blockquote {
   z-index: 3;
 }
 .transprant-bg:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -247,7 +247,7 @@ blockquote {
   position: relative;
 }
 .bg-image-1 {
-  background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
+  background: url('../images/bg-image-1.jpg') 50% 0px no-repeat;
 }
 .bg-image-2 {
 }
@@ -284,7 +284,7 @@ button.cta-button {
   border: 1px solid #fff;
   padding: 20px 42px;
   border-radius: 4px;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 600;
   transition: background 0.3s, border-color 0.3s;
   margin-top: 20px;
@@ -432,8 +432,8 @@ button.cta-button:hover {
   background-color: #fafafa;
 }
 .panel-heading a:after {
-  font-family: "FontAwesome";
-  content: "\f147";
+  font-family: 'FontAwesome';
+  content: '\f147';
   position: absolute;
   right: 15px;
   font-size: 14px;
@@ -443,7 +443,7 @@ button.cta-button:hover {
   margin-top: -7px;
 }
 .panel-heading a.collapsed:after {
-  content: "\f196";
+  content: '\f196';
 }
 .panel-heading a:hover {
   text-decoration: none;
@@ -544,14 +544,14 @@ textarea {
   border: none;
 }
 .main-navigation .navbar-default .navbar-nav > li > a {
-  color:white;
-  padding: 10px 20px;
+  color: white;
+  /* padding: 10px 20px; */
   font-size: 18px;
   font-weight: 400;
 }
 .main-navigation .navbar-default .navbar-nav > li.active > a {
   background-color: transparent;
-  color: rgb(7,189,238);
+  color: rgb(7, 189, 238);
   /* changes the color of visited link in main navbar inhome page */
 }
 .main-navigation .navbar-default .navbar-nav > li > a:hover,
@@ -611,8 +611,8 @@ textarea {
 }
 
 .item blockquote p:before {
-  content: "\f10d";
-  font-family: "Fontawesome";
+  content: '\f10d';
+  font-family: 'Fontawesome';
   float: left;
   margin-right: 10px;
 }
