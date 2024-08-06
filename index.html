@@ -21,268 +21,10 @@
 		<link href="css/animations.css" rel="stylesheet"> 
 		<link href="css/style.css" rel="stylesheet"> 
 		<link href="css/custom.css" rel="stylesheet">
-		<style>
-        /* Loading Screen Styles */
-		#loading{
-			position: fixed;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: black;
-            z-index: 9999;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-		}
-		.loader {
-  width: 112px;
-  height: 112px;
-  align-items: center;
-  justify-content: center;
-}
-
-.box1,
-.box2,
-.box3 {
-  border: 16px solid #f5f5f5;
-  box-sizing: border-box;
-  position: absolute;
-  display: block;
-}
-
-.box1 {
-  width: 112px;
-  height: 48px;
-  margin-top: 64px;
-  margin-left: 0px;
-  animation: abox1 4s 1s forwards ease-in-out infinite;
-}
-
-.box2 {
-  width: 48px;
-  height: 48px;
-  margin-top: 0px;
-  margin-left: 0px;
-  animation: abox2 4s 1s forwards ease-in-out infinite;
-}
-
-.box3 {
-  width: 48px;
-  height: 48px;
-  margin-top: 0px;
-  margin-left: 64px;
-  animation: abox3 4s 1s forwards ease-in-out infinite;
-}
-
-@keyframes abox1 {
-  0% {
-    width: 112px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  12.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  25% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  37.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  50% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  62.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-
-  75% {
-    width: 48px;
-    height: 112px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  87.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  100% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-}
-
-@keyframes abox2 {
-  0% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  12.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  25% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  37.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  50% {
-    width: 112px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-
-  62.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  75% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  87.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  100% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-}
-
-@keyframes abox3 {
-  0% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  12.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  25% {
-    width: 48px;
-    height: 112px;
-    margin-top: 0px;
-    margin-left: 64px;
-  }
-
-  37.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 64px;
-  }
-
-  50% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 64px;
-  }
-
-  62.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 64px;
-  }
-
-  75% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 64px;
-  }
-
-  87.5% {
-    width: 48px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 64px;
-  }
-
-  100% {
-    width: 112px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-  }
-}
-
-    </style>
 	</head>
 
 	<body class="no-trans">
-<div  id="loading">
-	<div class="loader">
-  <div class="box1"></div>
-  <div class="box2"></div>
-  <div class="box3"></div>
-</div>
-</div>
+
 	
 		<!-- scrollToTop --> 
 		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
@@ -291,19 +33,19 @@
 		<header class="bg-white header fixed clearfix navbar navbar-fixed-top" >
 			<div class="container" >
 				<div class="row">
-					<div class="col-md-4">
+					<div class="col-md-6">
 
 						<!-- header-left start --> 
 						<div class="header-left">
 
 							<!-- logo -->
 							<div class="logo smooth-scroll" >
-								<a href="/index.html"><img id="logo" src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1721586270/logo_hox6jh.png" alt="Worthy" height=40 width=40 style="margin-top: 10px;"></a>
+								<a href="/index.html"><img id="logo" src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1721586270/logo_hox6jh.png" alt="Worthy" height=45 width=45 style="margin-top: 10px;"></a>
 							</div>
 
 							<!-- name-and-slogan -->
 							<div class="logo-section smooth-scroll" >
-								<div class="brand"><a href="/index.html" style="margin-left: 12px;color:rgb(7,189,238);"> <strong>Blue <text style="color: rgb(237,27,114);;">Balance</text></strong></a></div>								
+								<div class="brand"><a href="/index.html" style="margin-left: 12px;color:rgb(7,189,238);"> <strong>The Blue <text style="color: rgb(237,27,114);;">Balance</text></strong></a></div>								
 
 							</div>
 
@@ -311,7 +53,7 @@
 						<!-- header-left end -->
 
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-6">
 
 						<!-- header-right start --> 
 						<div class="header-right">
@@ -373,7 +115,6 @@
 		</header>
 		<!-- header end -->
 
-		<div id="content" style="display:none;">
 			<!--section start-->
 				
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" style="height: 65%; margin-top: 6%;">
@@ -425,9 +166,14 @@
 								</h4>
 								<div class="panel-body">
 									<p style="text-align: justify;">Thank you for stopping by. I hope that you will leave the site much more informed and inspired on how we can live in harmony with the oceans and environment.
-<br><br>
+<br>
+
+<br>
 The global temperatures are already near +1.5°C  then the average of last century and a 2°C global average temperature hike is easily possible by 2050 (Copernicus). We are reaching a tipping point. Prof Bill McGuire, University College London, summarises the disturbing evidence on tipping points in the climate system. There are plenty of definitions for 'tipping point' out there, but the most apposite – in the context of climate breakdown – is that provided by the American Heritage Dictionary of the English Language, which describes it as “the point at which a slow, reversible change becomes irreversible, often with dramatic consequences”.  Business as usual will see the 2°C breached by 2050 or very soon after <a href="https://www.sgr.org.uk/publications/responsible-science">Article from Responsible Science journal, no.6; advance online publication: 7 December 2023</a>. This means that by mid-century a number of tipping points may already have tipped, ensuring a major transformation of our world from which there is no return. Neither rapid cuts in emissions nor the direct removal of carbon from the atmosphere will turn back the clock. This could see the irreversible dieback of the Amazon Rainforest, resulting in the addition of colossal amounts of carbon dioxide to the atmosphere. And unstoppable initiation of the melting of some parts of the East Antarctic Ice leading to sea-level rise due to collapse of the Greenland and West Antarctic ice sheets.
-<br><br>
+<br>
+<img src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1722930026/photo_2024-08-06_13-07-36_q6evhv.jpg" 
+									style="border-radius: 0%; height: 100%;  margin-top: 10px;">
+<br>
 Therefore, the irreversibility point of 2°C seems an important point for protecting the oceans, hence communication and the knowledge transfer across youth. As part of my learning journey and to raise awareness to protect Oceans, I have undertaken an initiative to create ten 10-15 minutes video podcasts through interviews with the experts under a series HARMONIOUS, where each letter refers to a specific challenge and how we can address it. I truly believe we all can play a part in protecting our Oceans and nature for future generations. 
 <br><br>
 
@@ -445,13 +191,16 @@ Therefore, the irreversibility point of 2°C seems an important point for protec
 								<div class="panel-body ">
 									
 									<p style="text-align: justify;">My love for Scuba diving and exploring oceans opened my eyes to the impact of environmental stress in the Oceans. I appreciated the beauty but was saddened by the fragility of the marine ecosystem. I became curious on how we can live in harmony with the Oceans and the Environment.
-<br><br>
+<br>
+<img src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1722930026/photo_2024-08-06_13-07-43_xkgemk.jpg" 
+									style="border-radius: 0%; height: 100%; align-content: center; margin-top: 10px;">
+<br>
 Through voluntary work and activities at school and beyond, I have been actively involved in raising awareness and pro-actively working on projects around environment and sustainability from litter picking to installing green pots in classrooms for clean air and making eco-friendly school uniforms. This further grew my interest and led me to get involved in solving real-world challenges through innovation and also to raise awareness while continuing to study to complete my A-levels in 2025. I am also a youth advocate for sustainability ( <a href="https://www.catalysingresearch.org/siddhangana-chilkoti">Siddhangana Chilkoti | Catalysing Research Institute</a> ) and was recently invited to World Oceans Day 2024. I am continuing to learn further in this burgeoning field, and my interactions and curiosity continues to inspire me. In 2024 summer, I attended Innovation and Engineering program at John Hopkins university. I believe that engineering and Innovation have the untapped potential to protect our oceans and I hope to help the cause.
 <br><br>
 I am inspired by ocean and nature, and I love to row, hike and climb mountains.  At times, I am also overly excited about conversations about biomimicry and what we can learn from environment. 
 <br><br>
-									<!-- <img src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1721614242/17_sf3gy9.jpg" 
-									style="border-radius: 0%; height: 250px; align-content: center; margin-top: 10px;"> -->
+									<img src="https://res.cloudinary.com/dzxr2dduh/image/upload/v1722930026/photo_2024-08-06_13-07-32_qpfbrd.jpg" 
+									style="border-radius: 0%; height: 200px; align-content: center; margin-top: 10px;">
 									
 									</p>
 								</div>
@@ -463,7 +212,7 @@ I am inspired by ocean and nature, and I love to row, hike and climb mountains. 
 			</div>
 		</section>
 		<!-- section end -->
-    </div>
+    
 
 		<!-- footer start --> 
 		<footer id="footer">
@@ -491,15 +240,7 @@ I am inspired by ocean and nature, and I love to row, hike and climb mountains. 
 		<script type="text/javascript" src="plugins/isotope/isotope.pkgd.min.js"></script>
 		<script type="text/javascript" src="plugins/jquery.backstretch.min.js"></script>
 		<script type="text/javascript" src="plugins/jquery.appear.js"></script>
-<script type="text/javascript">
-        // Hide the loading screen after 5 seconds
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            }, 3000); // 5 seconds delay
-        });
-    </script>
+
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/custom.js"></script>
 
